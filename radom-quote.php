@@ -10,18 +10,18 @@
  *
  * @link              https://cleilsontechinfo.netlify.com/
  * @since             1.0.0
- * @package           Radom_Quotes
+ * @package           Radom_Quote
  *
  * @wordpress-plugin
- * Plugin Name:       Radom Quotes
+ * Plugin Name:       Radom Quote
  * Plugin URI:        https://cleilsontechinfo.netlify.com/
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
  * Version:           1.0.0
- * Author:            CLEILSON PEREIRA
+ * Author:            CLEILSON  PEREIRA
  * Author URI:        https://cleilsontechinfo.netlify.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       radom quotes
+ * Text Domain:       radom-quote
  * Domain Path:       /languages
  */
 
@@ -35,34 +35,34 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'RADOM QUOTES_VERSION', '1.0.0' );
+define( 'RADOM_QUOTE_VERSION', '1.0.0' );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-radom quotes-activator.php
+ * This action is documented in includes/class-radom-quote-activator.php
  */
-function activate_radom quotes() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-radom quotes-activator.php';
-	Radom_Quotes_Activator::activate();
+function activate_radom_quote() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-radom-quote-activator.php';
+	Radom_Quote_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-radom quotes-deactivator.php
+ * This action is documented in includes/class-radom-quote-deactivator.php
  */
-function deactivate_radom quotes() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-radom quotes-deactivator.php';
-	Radom_Quotes_Deactivator::deactivate();
+function deactivate_radom_quote() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-radom-quote-deactivator.php';
+	Radom_Quote_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_radom quotes' );
-register_deactivation_hook( __FILE__, 'deactivate_radom quotes' );
+register_activation_hook( __FILE__, 'activate_radom_quote' );
+register_deactivation_hook( __FILE__, 'deactivate_radom_quote' );
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-radom quotes.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-radom-quote.php';
 
 /**
  * Begins execution of the plugin.
@@ -73,10 +73,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-radom quotes.php';
  *
  * @since    1.0.0
  */
-function run_radom quotes() {
+function run_radom_quote() {
 
-	$plugin = new Radom_Quotes();
+	$plugin = new Radom_Quote();
 	$plugin->run();
 
 }
-run_radom quotes();
+run_radom_quote();

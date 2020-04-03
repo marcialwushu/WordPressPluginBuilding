@@ -19,10 +19,10 @@
  * For more information, see the following discussion:
  * https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate/pull/123#issuecomment-28541913
  *
- * @link       http://unigrande.edu.br
+ * @link       https://cleilsontechinfo.netlify.com/
  * @since      1.0.0
  *
- * @package    Radom_Quotes
+ * @package    Radom_Quote
  */
 
 // If uninstall not called from WordPress, then exit.
